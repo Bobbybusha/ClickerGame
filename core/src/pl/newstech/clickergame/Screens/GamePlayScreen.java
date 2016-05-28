@@ -9,13 +9,9 @@ import pl.newstech.clickergame.Entities.Player;
 public class GamePlayScreen extends AbstractScreen {
     public GamePlayScreen(ClickerGame game) {
         super(game);
-        init();
     }
 
     private Player player;
-    private void init() {
-        initPlayer();
-    }
 
     private void initPlayer() {
         player = new Player();
@@ -35,5 +31,10 @@ public class GamePlayScreen extends AbstractScreen {
 
     private void update() {
         stage.act();
+    }
+
+    @Override
+    protected void init() {
+        initPlayer();
     }
 }
