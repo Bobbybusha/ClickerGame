@@ -34,4 +34,8 @@ public class ClickerGame extends Game {
 	public int getPoints() {
 		return points;
 	}
+
+	public void resetPoints() {
+		points = 0;
+	}
 }

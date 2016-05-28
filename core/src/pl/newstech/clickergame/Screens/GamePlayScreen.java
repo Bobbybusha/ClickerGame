@@ -15,6 +15,7 @@ import pl.newstech.clickergame.Entities.Player;
 public class GamePlayScreen extends AbstractScreen {
     private Player player;
     private Button playerButton;
+    private Button resetButton;
     private Label scoreLabel;
 
     public GamePlayScreen(ClickerGame game) {
@@ -47,6 +48,7 @@ public class GamePlayScreen extends AbstractScreen {
         initPlayer();
         initPlayerButton();
         initScoreLabel();
+        initResetButton();
     }
 
     private void initScoreLabel() {
@@ -75,6 +77,25 @@ public class GamePlayScreen extends AbstractScreen {
             public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
                 player.reactOnClick();
                 game.addPoint();
+                return super.touchDown(event, x, y, pointer, button);
+            }
+        });
+    }
+
+    private void initResetButton() {
+        resetButton = new Button(new Button.ButtonStyle());
+        resetButton.setWidth(40);
+        resetButton.setHeight(10);
+        resetButton.setX(160);
+        resetButton.setY(550);
+        resetButton.setDebug(true);
+
+        stage.addActor(resetButton);
+
+        resetButton.addListener(new ClickListener() {
+            @Override
+            public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
+                game.resetPoints();
                 return super.touchDown(event, x, y, pointer, button);
             }
         });
