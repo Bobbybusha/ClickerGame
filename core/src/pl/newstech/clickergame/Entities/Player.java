@@ -22,14 +22,11 @@ public class Player extends Image {
 
         this.setOrigin(WIDTH / 2, WEIGHT / 2);//orientation from image half
         this.setSize(WIDTH, WEIGHT);//size
-
-        //starting position
         this.setPosition(STARTING_X, STARTING_Y);//positiob
     }
 
     public void reactOnClick() {
         //Action testAction = Actions.moveBy(10, 15);//sizeBy, moveBy and other action :D
-
         int xMoveAmount = MathUtils.random(-130, 130);
 
         Action moveAction = Actions.sequence(

@@ -13,34 +13,34 @@ import pl.newstech.clickergame.Entities.Player;
  * Created by bartek on 28.05.16.
  */
 public class GamePlayScreen extends AbstractScreen {
-    public GamePlayScreen(ClickerGame game) {
-        super(game);
-    }
-
     private Player player;
     private Button playerButton;
     private Label scoreLabel;
+
+    public GamePlayScreen(ClickerGame game) {
+        super(game);
+    }
 
     private void initPlayer() {
         player = new Player();
         stage.addActor(player);//add player to stage
     }
 
-    @Override
-    public void render(float delta) {
-        super.render(delta);
-        update();
-        spriteBatch.begin();
-
-        stage.draw();
-
-        spriteBatch.end();
-    }
-
     private void update() {
         scoreLabel.setText("Score: " + game.getPoints());
         stage.act();
     }
+
+    @Override
+    public void render(float delta) {
+        super.render(delta);
+        update();
+
+        spriteBatch.begin();
+        stage.draw();
+        spriteBatch.end();
+    }
+
 
     @Override
     protected void init() {
@@ -54,8 +54,9 @@ public class GamePlayScreen extends AbstractScreen {
         labelStyle.font = new BitmapFont();
 
         scoreLabel = new Label("Score: ", labelStyle);
-        scoreLabel.setX(50);
-        scoreLabel.setY(450);
+        scoreLabel.setX(40);
+        scoreLabel.setY(550);
+
         stage.addActor(scoreLabel);
     }
 
@@ -72,14 +73,10 @@ public class GamePlayScreen extends AbstractScreen {
         playerButton.addListener(new ClickListener() {
             @Override
             public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
-
                 player.reactOnClick();
-
                 game.addPoint();
-
                 return super.touchDown(event, x, y, pointer, button);
             }
         });
-
     }
 }
