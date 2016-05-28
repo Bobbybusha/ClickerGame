@@ -1,6 +1,7 @@
 package pl.newstech.clickergame.Screens;
 
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.utils.Timer;
 
 import pl.newstech.clickergame.ClickerGame;
 
@@ -11,9 +12,18 @@ public class SplashScreen extends AbstractScreen {
 
     private Texture splashImg;
 
-    public SplashScreen(ClickerGame game) {
+    public SplashScreen(final ClickerGame game) {
         super(game);
         init();
+
+        Timer.schedule(new Timer.Task() {
+            @Override
+            public void run() {
+                //debug
+                //System.out.println("test");
+                game.setScreen(new GamePlayScreen(game));
+            }
+        }, 3);
     }
 
     private void init() {
