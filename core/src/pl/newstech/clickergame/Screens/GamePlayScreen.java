@@ -1,7 +1,9 @@
 package pl.newstech.clickergame.Screens;
 
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.ui.Button;
+import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 
 import pl.newstech.clickergame.ClickerGame;
@@ -17,6 +19,7 @@ public class GamePlayScreen extends AbstractScreen {
 
     private Player player;
     private Button playerButton;
+    private Label scoreLabel;
 
     private void initPlayer() {
         player = new Player();
@@ -42,6 +45,17 @@ public class GamePlayScreen extends AbstractScreen {
     protected void init() {
         initPlayer();
         initPlayerButton();
+        initScoreLabel();
+    }
+
+    private void initScoreLabel() {
+        Label.LabelStyle labelStyle = new Label.LabelStyle();
+        labelStyle.font = new BitmapFont();
+
+        scoreLabel = new Label("Score: ", labelStyle);
+        scoreLabel.setX(50);
+        scoreLabel.setY(450);
+        stage.addActor(scoreLabel);
     }
 
     private void initPlayerButton() {
