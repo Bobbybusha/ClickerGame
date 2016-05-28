@@ -13,7 +13,9 @@ public class ClickerGame extends Game {
 	public final static int HEIGHT = 320;
 	SpriteBatch batch;
 	Texture img;
-	
+
+	private boolean paused;
+
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
@@ -27,5 +29,14 @@ public class ClickerGame extends Game {
 		batch.begin();
 		batch.draw(img, 0, 0);
 		batch.end();
+	}
+
+	//get & set
+	public boolean isPaused() {
+		return paused;
+	}
+
+	public void setPaused(boolean paused) {
+		this.paused = paused;
 	}
 }
