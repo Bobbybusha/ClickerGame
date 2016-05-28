@@ -10,8 +10,8 @@ public class Player extends Image {
     public final static int WIDTH = 77;
     public final static int WEIGHT = 152;
 
-    public final static int STARTING_X = 200;
-    public final static int STARTING_Y = 320;
+    public final static int STARTING_X = 100;
+    public final static int STARTING_Y = 100;
 
     public Player() {
         super(new Texture("badlogic.jpg"));
