@@ -10,6 +10,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/pl/newstech/clickergame/Entities/Player.java" afterPath="$PROJECT_DIR$/core/src/pl/newstech/clickergame/Entities/Player.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/pl/newstech/clickergame/Screens/GamePlayScreen.java" afterPath="$PROJECT_DIR$/core/src/pl/newstech/clickergame/Screens/GamePlayScreen.java" />
     </list>
     <ignored path="ClickerGame.iws" />
@@ -79,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/pl/newstech/clickergame/Entities/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.72727275">
+              <caret line="50" column="79" selection-start-line="50" selection-start-column="79" selection-end-line="50" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,22 +109,24 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GamePlayScreen.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GamePlayScreen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/pl/newstech/clickergame/Screens/GamePlayScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6727273">
-              <caret line="59" column="69" selection-start-line="59" selection-start-column="69" selection-end-line="59" selection-end-column="69" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="60" column="38" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#436#437#0" expanded="true" />
                 <element signature="e#463#464#0" expanded="true" />
-                <element signature="e#1336#1573#0" expanded="true" />
-                <element signature="e#1572#1573#0" expanded="true" />
+                <element signature="e#1336#1614#0" expanded="true" />
+                <element signature="e#1613#1614#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2392,11 +2395,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/desktop/src/pl/newstech/clickergame/desktop/DesktopLauncher.java" />
-        <option value="$PROJECT_DIR$/core/src/pl/newstech/clickergame/Entities/Player.java" />
         <option value="$PROJECT_DIR$/core/src/pl/newstech/clickergame/ClickerGame.java" />
         <option value="$PROJECT_DIR$/core/src/pl/newstech/clickergame/Screens/AbstractScreen.java" />
         <option value="$PROJECT_DIR$/core/src/pl/newstech/clickergame/Screens/SplashScreen.java" />
         <option value="$PROJECT_DIR$/core/src/pl/newstech/clickergame/Screens/GamePlayScreen.java" />
+        <option value="$PROJECT_DIR$/core/src/pl/newstech/clickergame/Entities/Player.java" />
       </list>
     </option>
   </component>
@@ -2882,7 +2885,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="24" width="1282" height="673" extended-state="6" />
+    <frame x="-1" y="24" width="1282" height="673" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2994,7 +2997,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3006,8 +3011,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#436#437#0" expanded="true" />
             <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#1336#1573#0" expanded="true" />
-            <element signature="e#1572#1573#0" expanded="true" />
+            <element signature="e#1336#1614#0" expanded="true" />
+            <element signature="e#1613#1614#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3082,16 +3087,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/pl/newstech/clickergame/Entities/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3132,14 +3129,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/pl/newstech/clickergame/Screens/GamePlayScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6727273">
-          <caret line="59" column="69" selection-start-line="59" selection-start-column="69" selection-end-line="59" selection-end-column="69" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="38" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#436#437#0" expanded="true" />
             <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#1336#1573#0" expanded="true" />
-            <element signature="e#1572#1573#0" expanded="true" />
+            <element signature="e#1336#1614#0" expanded="true" />
+            <element signature="e#1613#1614#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/pl/newstech/clickergame/Entities/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72727275">
+          <caret line="50" column="79" selection-start-line="50" selection-start-column="79" selection-end-line="50" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
