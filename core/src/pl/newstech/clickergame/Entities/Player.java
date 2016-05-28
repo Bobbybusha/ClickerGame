@@ -14,8 +14,8 @@ public class Player extends Image {
     public final static int WIDTH = 77;
     public final static int WEIGHT = 152;
 
-    public final static int STARTING_X = 100;
-    public final static int STARTING_Y = 100;
+    public final static int STARTING_X = 200;
+    public final static int STARTING_Y = 300;
 
     public Player() {
         super(new Texture("badlogic.jpg"));
@@ -30,18 +30,18 @@ public class Player extends Image {
     public void reactOnClick() {
         //Action testAction = Actions.moveBy(10, 15);//sizeBy, moveBy and other action :D
 
-        int moveAmount = MathUtils.random(-130, 130);
+        int xMoveAmount = MathUtils.random(-130, 130);
 
         Action moveAction = Actions.sequence(
-                Actions.moveBy(moveAmount, 10, 0.30f, Interpolation.circleOut),
-                Actions.moveBy(-moveAmount, -10, 0.30f, Interpolation.circle)
+                Actions.moveBy(xMoveAmount, 10, 0.30f, Interpolation.circleOut),
+                Actions.moveBy(-xMoveAmount, -10, 0.30f, Interpolation.circle)
         );
 
-        int growAmount = MathUtils.random(-30, 100);
+        int yGrowAmount = MathUtils.random(-30, 100);
 
         Action growAction = Actions.sequence(
-                Actions.sizeBy(growAmount, 20, 0.2f, Interpolation.circleOut),
-                Actions.sizeBy(-growAmount, -20, 0.2f, Interpolation.circle)
+                Actions.sizeBy(yGrowAmount, 20, 0.2f, Interpolation.circleOut),
+                Actions.sizeBy(-yGrowAmount, -20, 0.2f, Interpolation.circle)
         );
 
         this.addAction(moveAction);

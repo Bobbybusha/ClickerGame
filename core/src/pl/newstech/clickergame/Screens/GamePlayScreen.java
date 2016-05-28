@@ -60,6 +60,8 @@ public class GamePlayScreen extends AbstractScreen {
 
                 player.reactOnClick();
 
+                game.addPoint();
+
                 return super.touchDown(event, x, y, pointer, button);
             }
         });
