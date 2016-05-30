@@ -85,7 +85,7 @@ public class GamePlayScreen extends AbstractScreen {
     private void initResetButton() {
         resetButton = new Button(new Button.ButtonStyle());
         resetButton.setWidth(40);
-        resetButton.setHeight(10);
+        resetButton.setHeight(20);
         resetButton.setX(160);
         resetButton.setY(550);
         resetButton.setDebug(true);
