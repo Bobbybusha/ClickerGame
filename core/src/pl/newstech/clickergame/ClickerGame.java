@@ -20,8 +20,7 @@ public class ClickerGame extends Game {
 
 	public void addPoint() {
 		points++;
-		preferences.putInteger(GAME_SCORE, points);
-		preferences.flush();//store to memory
+		updateSavePoints();
 	}
 
 	@Override
@@ -45,6 +44,12 @@ public class ClickerGame extends Game {
 
 	public void resetPoints() {
 		points = 0;
+		updateSavePoints();
+	}
+
+	private void updateSavePoints() {
+		preferences.putInteger(GAME_SCORE, points);
+		preferences.flush();//store to memory
 	}
 
 	private void init() {
