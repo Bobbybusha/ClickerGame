@@ -49,10 +49,10 @@ public class ClickerGame extends Game {
 
 	private void init() {
 		preferences = Gdx.app.getPreferences(GAME_PREFERENCES);
-		loadScore();
+		loadPoints();
 	}
 
-	private void loadScore() {
+	private void loadPoints() {
 		points = preferences.getInteger(GAME_SCORE);
 	}
 }

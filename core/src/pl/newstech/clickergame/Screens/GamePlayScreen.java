@@ -14,8 +14,8 @@ import pl.newstech.clickergame.Entities.Player;
  */
 public class GamePlayScreen extends AbstractScreen {
     private Player player;
-    private Button playerButton;
-    private Button resetButton;
+    private Button playerButton,
+            resetButton;
     private Label scoreLabel;
 
     public GamePlayScreen(ClickerGame game) {
